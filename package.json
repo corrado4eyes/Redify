@@ -1,7 +1,10 @@
 {
   "name": "cra-template-redify",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "main": "template.json",
+  "author": "corrado4eyes",
+  "repository": "https://github.com/corrado4eyes/Redify",
+  "description": "Template that uses the super set of JS, Typescript, combined with Redux and Inversify.",
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
