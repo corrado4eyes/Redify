@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from '../utils/serviceWorker';
+import App from './uiComponents/App';
+import * as serviceWorker from './utils/serviceWorker';
 import 'reflect-metadata';
 
 ReactDOM.render(<App />, document.getElementById('root'));
