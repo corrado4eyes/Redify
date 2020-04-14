@@ -1,11 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import App from './uiComponents/App';
 import * as serviceWorker from './utils/serviceWorker';
 import 'reflect-metadata';
+import { configureStore } from './redux/store/storeConfig';
+import container from './configs/inversify';
+import * as Inversify from "inversify-react";
+import * as Redux from "react-redux";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = configureStore(container)
+
+ReactDOM.render(
+    <Inversify.Provider container={container}>
+        <Redux.Provider store={store}>
+            <App />
+        </Redux.Provider>
+    </Inversify.Provider>, 
+    document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
