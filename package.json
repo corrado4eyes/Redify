@@ -1,23 +1,31 @@
 {
   "name": "cra-template-redify",
-  "version": "0.0.1",
+  "version": "0.2.3",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "typescript",
+    "redux",
+    "inversify"
+  ],
   "main": "template.json",
+  "files": [
+    "template",
+    "template.json"
+  ],
   "author": "corrado4eyes",
   "repository": "https://github.com/corrado4eyes/Redify",
   "description": "Template that uses the super set of JS, Typescript, combined with Redux and Inversify.",
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0",
-    "react-redux": "^7.1.3",
-    "redux": "^4.0.4",
-    "redux-devtools-extension": "^2.13.8",
-    "redux-mock-store": "^1.5.3",
-    "redux-thunk": "^2.3.0",
-    "@types/react-redux": "^7.1.5",
-    "@types/redux-mock-store": "^1.0.1",
     "inversify": "^5.0.1",
-    "inversify-inject-decorators": "^3.1.0",
-    "inversify-react": "^0.4.3"
+    "inversify-react": "^0.4.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.5",
+    "typescript": "^3.7.5"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start"
   }
 }
